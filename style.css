@@ -58,6 +58,7 @@ p {
   font-family: "red hat dispaly", sans-serif;
   font-size: 16px;
   color: hsl(224, 23%, 55%);
+  line-height: 150%;
 }
 
 .middle-panneau {
@@ -77,8 +78,12 @@ p {
 }
 
 .change-payment {
-  margin-top: 25px;
+  margin-top: 35px;
   margin-right: 10px;
+}
+
+.change-payment:hover {
+  text-decoration: none;
 }
 
 .duration-payment-price {
@@ -87,11 +92,23 @@ p {
 .duration-payment {
   margin-bottom: 10px;
 }
+
 .duration-payment,
 .cancel {
   font-size: 16px;
   font-weight: 700;
   font-family: "red hat dispaly", sans-serif;
+  color: hsl(223, 47%, 23%);
+}
+
+.cancel {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+}
+
+.cancel:hover {
   color: hsl(223, 47%, 23%);
 }
 
@@ -114,13 +131,38 @@ p {
   color: white;
 }
 
-.cancel {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-decoration: none;
+.button-payment:hover {
+  background-color: hsl(245, 75%, 60%);
+  border-color: hsl(245, 75%, 60%);
 }
 
 footer {
   position: relative;
   top: 145px;
+}
+
+@media only screen and (max-width: 390px) {
+  .panneau {
+    max-width: 370px;
+  }
+
+  img.bcg-top-panneau {
+    max-width: 370px;
+  }
+
+  .music-icon {
+    margin-left: -30px;
+  }
+
+  .duration-payment-price {
+    margin-left: -25px;
+  }
+
+  .change-payment {
+    margin-right: -25px;
+  }
+
+  footer {
+    display: none;
+  }
 }
