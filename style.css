@@ -62,13 +62,35 @@ p {
 
 .middle-panneau {
   margin: 20px 70px;
-  background-color: hsl(225, 100%, 94%);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: hsl(225, 100%, 98%);
   border-radius: 20px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+
+.music-icon {
+  margin-top: 15px;
+  margin-left: 10px;
+  height: 50px;
+}
+
+.change-payment {
+  margin-top: 25px;
+  margin-right: 10px;
+}
+
+.duration-payment-price {
+  margin-left: -50px;
 }
 .duration-payment {
+  margin-bottom: 10px;
+}
+.duration-payment,
+.cancel {
   font-size: 16px;
+  font-weight: 700;
   font-family: "red hat dispaly", sans-serif;
   color: hsl(223, 47%, 23%);
 }
@@ -87,9 +109,7 @@ p {
   border-radius: 10px;
   border-color: hsl(245, 75%, 52%);
   box-shadow: 0px 22px 32px -14px hsl(224, 23%, 55%);
-}
-
-.button-payment a {
+  cursor: pointer;
   text-decoration: none;
   color: white;
 }
@@ -97,6 +117,7 @@ p {
 .cancel {
   margin-top: 20px;
   margin-bottom: 20px;
+  text-decoration: none;
 }
 
 footer {
