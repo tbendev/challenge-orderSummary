@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-repeat: repeat-x;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.panneau {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.bcg-top-panneau {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  max-width: 452px;
+}
+
+.top-panneau {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: "red hat dispaly", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: hsl(223, 47%, 23%);
+}
+
+p {
+  font-family: "red hat dispaly", sans-serif;
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+  line-height: 150%;
+}
+
+.middle-panneau {
+  margin: 20px 70px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.music-icon {
+  margin-top: 15px;
+  margin-left: 10px;
+  height: 50px;
+}
+
+.change-payment {
+  margin-top: 35px;
+  margin-right: 10px;
+}
+
+.change-payment:hover {
+  text-decoration: none;
+}
+
+.duration-payment-price {
+  margin-left: -50px;
+}
+.duration-payment {
+  margin-bottom: 10px;
+}
+
+.duration-payment,
+.cancel {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "red hat dispaly", sans-serif;
+  color: hsl(223, 47%, 23%);
+}
+
+.cancel {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+}
+
+.cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+.bottom-panneau {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.button-payment {
+  background-color: hsl(245, 75%, 52%);
+  font-size: 16px;
+  padding: 10px 70px;
+  border-radius: 10px;
+  border-color: hsl(245, 75%, 52%);
+  box-shadow: 0px 22px 32px -14px hsl(224, 23%, 55%);
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.button-payment:hover {
+  background-color: hsl(245, 75%, 60%);
+  border-color: hsl(245, 75%, 60%);
+}
+
+footer {
+  position: relative;
+  top: 145px;
+}
+
+@media only screen and (max-width: 390px) {
+  .panneau {
+    max-width: 370px;
+  }
+
+  img.bcg-top-panneau {
+    max-width: 370px;
+  }
+
+  .music-icon {
+    margin-left: -30px;
+  }
+
+  .duration-payment-price {
+    margin-left: -25px;
+  }
+
+  .change-payment {
+    margin-right: -25px;
+  }
+
+  footer {
+    display: none;
+  }
+}
